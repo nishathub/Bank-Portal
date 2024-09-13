@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank-data</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="py-5">
+    <h1 class="text-5xl text-center">
+      Bank Portal
+      <span class="text-violet-500">L E N D E N</span>
+    </h1>
+  </header>
+  <main>
+    <section>
+      <div class="grid grid-cols-3 gap-4 max-w-3xl text-center mx-auto">
+        <div class="bg-green-300 p-4 rounded-lg font-medium" id="box-1">
+          <h2 class="text-lg tracking-wide">Deposit</h2>
+          <h4 id="oldDepositAmnt" class="text-3xl tracking-wider">$0</h4>
+        </div>
+        <div class="bg-amber-300 p-4 rounded-lg font-medium" id="box-1">
+          <h2 class="text-lg tracking-wide">Withdraw</h2>
+          <h4 id="oldWithdrawAmnt" class="text-3xl tracking-wider">$0</h4>
+        </div>
+        <div id="balance_bg" class="bg-blue-300 p-4 rounded-lg font-medium" id="box-1">
+          <h2 id="balance_heading" class="text-lg tracking-wide">Balance</h2>
+          <h4 id="balanceAmnt" class="text-3xl tracking-wider;">$1500</h4>
+        </div>
+      </div>
+    </section>
+    <!-- Deposit and Withdraw  -->
+    <section>
+      <div class="grid grid-cols-2 gap-4 text-left max-w-3xl mt-12 mx-auto">
+        <div class="bg-violet-300 rounded-lg p-8 flex flex-col gap-6">
+          <h2 class="text-3xl">Deposit Here</h2>
+          <input id="depositBox" class="w-8/12 rounded-md px-3" placeholder="$ Enter amount" type="text" />
+          <button id="depositBtn" class="bg-violet-600 w-4/12 px-4 py-1 rounded-lg text-white font-medium">
+            Deposit
+          </button>
+        </div>
+        <div class="bg-indigo-300 rounded-lg p-8 flex flex-col gap-6">
+          <h2 class="text-3xl">Withdraw Here</h2>
+          <input id="withdrawBox" class="w-8/12 rounded-md px-3" placeholder="$ Enter amount" type="text" />
+          <button id="withdrawBtn" class="bg-orange-600 w-4/12 px-4 py-1 rounded-lg text-white font-medium">
+            Withdraw
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./utility.js"></script>
+  <script src="./bBank-functional.js"></script>
+</body>
+
+</html>
